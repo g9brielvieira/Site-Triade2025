@@ -34,52 +34,40 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <section class="services-hero">
+    <!-- Module Content - Compact Layout -->
+    <section class="module-page-section">
         <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <a href="index.html#servicos" class="btn-back mb-4" data-aos="fade-down">
-                        <i class="fas fa-arrow-left me-2"></i>Voltar aos Módulos
-                    </a>
-                    <h1 class="hero-title" id="module-title" data-aos="fade-up">Módulo Protheus</h1>
-                    <p class="hero-subtitle mx-auto" id="module-subtitle" data-aos="fade-up" data-aos-delay="100">
-                        Conheça em detalhes como podemos ajudar sua empresa
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Module Content -->
-    <section class="module-content-section">
-        <div class="container">
+            <!-- Back button inline -->
+            <a href="index.html#servicos" class="btn-back-inline" data-aos="fade-right">
+                <i class="fas fa-arrow-left me-2"></i>Voltar
+            </a>
+            
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="module-content-card" data-aos="fade-up">
-                        <!-- Icon -->
-                        <div class="module-header">
-                            <div class="module-icon-wrapper" id="module-icon">
-                                <i class="fas fa-boxes"></i>
-                            </div>
+                    <!-- Module Header Compact -->
+                    <div class="module-header-compact" data-aos="fade-up">
+                        <div class="module-icon-small" id="module-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="module-title-area">
+                            <h1 id="module-title">Módulo Protheus</h1>
+                            <p id="module-subtitle">Subtítulo do módulo</p>
+                        </div>
+                    </div>
+
+                    <!-- Module Content -->
+                    <div class="module-content-clean" data-aos="fade-up" data-aos-delay="100">
+                        <p id="module-description" class="module-description-text">
+                            Descrição do módulo será carregada aqui.
+                        </p>
+                        
+                        <div class="module-features-grid" id="module-features">
+                            <!-- Features serão inseridas via JS -->
                         </div>
                         
-                        <!-- Description -->
-                        <div class="module-body">
-                            <h3>Sobre o Módulo</h3>
-                            <p id="module-description" class="module-description">
-                                Descrição do módulo será carregada aqui.
-                            </p>
-                            
-                            <h4 class="mt-5 mb-4">O que oferecemos</h4>
-                            <div class="row" id="module-features">
-                                <!-- Features serão inseridas via JS -->
-                            </div>
-                            
-                            <h4 class="mt-5 mb-4">Benefícios</h4>
-                            <p id="module-benefits" class="module-benefits">
-                                Benefícios do módulo.
-                            </p>
+                        <div class="module-benefits-box">
+                            <h5><i class="fas fa-star me-2"></i>Benefícios</h5>
+                            <p id="module-benefits">Benefícios do módulo.</p>
                         </div>
                     </div>
                 </div>
@@ -287,11 +275,8 @@
             // Features
             const featuresContainer = document.getElementById('module-features');
             featuresContainer.innerHTML = module.features.map(feature => `
-                <div class="col-md-6 mb-3">
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle me-2"></i>
-                        ${feature}
-                    </div>
+                <div class="feature-tag">
+                    <i class="fas fa-check me-2"></i>${feature}
                 </div>
             `).join('');
 

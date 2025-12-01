@@ -503,101 +503,130 @@ footer a:hover {
     align-self: flex-start;
 }
 
-/* Module Details Page - Clean Design */
-.btn-back {
+/* Module Details Page - Clean Compact Design */
+.module-page-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.btn-back-inline {
     display: inline-flex;
     align-items: center;
     color: var(--text-muted);
     text-decoration: none;
     font-size: 0.9rem;
+    margin-bottom: 2rem;
     transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.btn-back:hover {
+.btn-back-inline:hover {
     color: var(--primary-color);
+    background: rgba(14, 165, 233, 0.1);
+    border-color: var(--primary-color);
 }
 
-.module-content-section {
-    padding: 60px 0 100px;
+.module-header-compact {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.module-content-card {
-    background: var(--card-bg);
-    border: var(--glass-border);
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-.module-header {
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
-    padding: 3rem;
-    text-align: center;
-    border-bottom: var(--glass-border);
-}
-
-.module-icon-wrapper {
-    width: 100px;
-    height: 100px;
+.module-icon-small {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
     background: var(--gradient-main);
-    border-radius: 50%;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: white;
 }
 
-.module-body {
-    padding: 3rem;
-}
-
-.module-body h3 {
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
+.module-title-area h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
     font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.module-body h4 {
-    color: var(--text-color);
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.25rem;
+.module-title-area p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 1rem;
 }
 
-.module-description {
+.module-content-clean {
+    background: var(--card-bg);
+    border: var(--glass-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.module-description-text {
     color: var(--text-muted);
     font-size: 1.1rem;
     line-height: 1.8;
+    margin-bottom: 2rem;
 }
 
-.module-benefits {
-    color: var(--text-muted);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    padding: 1.5rem;
-    background: rgba(14, 165, 233, 0.05);
-    border-radius: 12px;
-    border-left: 4px solid var(--primary-color);
-}
-
-.feature-item {
+.module-features-grid {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.feature-tag {
+    display: inline-flex;
     align-items: center;
-    padding: 1rem 1.25rem;
-    background: rgba(30, 41, 59, 0.5);
-    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    background: rgba(14, 165, 233, 0.1);
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    border-radius: 25px;
     color: var(--text-color);
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
-.feature-item:hover {
-    background: rgba(30, 41, 59, 0.8);
-    transform: translateX(5px);
+.feature-tag:hover {
+    background: rgba(14, 165, 233, 0.2);
+    transform: translateY(-2px);
 }
 
-.feature-item i {
+.feature-tag i {
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+}
+
+.module-benefits-box {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(99, 102, 241, 0.08) 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.module-benefits-box h5 {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.module-benefits-box p {
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.7;
 }
 
 .cta-title {
@@ -617,5 +646,20 @@ a .service-card {
 
 a:hover .service-card {
     color: var(--text-color);
+}
+
+@media (max-width: 576px) {
+    .module-header-compact {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .module-title-area h1 {
+        font-size: 1.8rem;
+    }
+    
+    .module-content-clean {
+        padding: 1.5rem;
+    }
 }
 
