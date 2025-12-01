@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato - Triade Intelligence</title>
+    <link rel="icon" type="image/jpg" href="/img/triade_intelligence_logo2.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo triade.jpg" alt="Logo Triade">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Consultoria</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <div class="hero-badge" data-aos="fade-down">
+                    <i class="fas fa-envelope me-2"></i>Fale Conosco
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Entre em Contato
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Estamos prontos para atender sua empresa e transformar seus desafios em soluções
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Cards Section -->
+    <section class="contact-cards-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h5>Telefone</h5>
+                        <p>Ligue para nós</p>
+                        <a href="tel:+5561981612288">(61) 98161-2288</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>E-mail</h5>
+                        <p>Envie uma mensagem</p>
+                        <a href="mailto:comercial@triade.inf.br">comercial@triade.inf.br</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h5>WhatsApp</h5>
+                        <p>Chat direto conosco</p>
+                        <a href="https://wa.me/5561981612288" target="_blank">Iniciar conversa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label" data-aos="fade-up">Formulário de Contato</span>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Envie sua Mensagem</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Preencha o formulário abaixo e entraremos em contato em breve</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form" id="my-form" action="https://formspree.io/f/xrbdkroq" method="POST" data-aos="fade-up" data-aos-delay="300">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nome Completo <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Seu nome completo">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Telefone <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="company" class="form-label">Empresa</label>
+                                <input type="text" class="form-control" id="company" name="company" placeholder="Nome da empresa">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Assunto <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="subject" name="subject" required placeholder="Qual o assunto?">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensagem <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Descreva sua necessidade..."></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" id="my-form-button" class="btn btn-submit">
+                                    Enviar Mensagem
+                                </button>
+                                <p id="my-form-status" class="mt-3"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Triade Intelligence</h5>
+                    <p>Consultoria especializada em Protheus há mais de 17 anos.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Início</a></li>
+                        <li class="mb-2"><a href="servicos.html">Serviços</a></li>
+                        <li class="mb-2"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contato</h5>
+                    <p>
+                        <i class="fas fa-envelope me-2"></i>comercial@triade.inf.br<br>
+                        <i class="fas fa-phone me-2"></i>(61) 98161-2288
+                    </p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255, 252, 252, 0.1); margin: 2rem 0;">
+            <div class="text-center">
+                <p>&copy; 2025 Triade Intelligence. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5561981612288" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Abrir WhatsApp - Triade Intelligence">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        // Inicializa AOS, que é usado para animações ao rolar a página
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Formspree handler
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var submitBtn = document.getElementById("my-form-button");
+            var originalText = submitBtn.innerHTML;
+            var data = new FormData(event.target);
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+            submitBtn.disabled = true;
+            status.innerHTML = "";
+            
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = '<span style="color: #10b981;">Mensagem enviada com sucesso!</span>';
+                    form.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = '<span style="color: #ef4444;">' + data["errors"].map(error => error["message"]).join(", ") + '</span>';
+                        } else {
+                            status.innerHTML = '<span style="color: #ef4444;">Ops! Houve um problema ao enviar o formulário</span>';
+                        }
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = '<span style="color: #ef4444;">Ops! Houve um problema ao enviar o formulário</span>';
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
+</body>
+
+</html>
