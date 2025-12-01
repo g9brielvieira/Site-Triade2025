@@ -503,23 +503,111 @@ footer a:hover {
     align-self: flex-start;
 }
 
-/* Module Details Page */
-.module-detail-section {
-    padding: 100px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+/* Module Details Page - Clean Design */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
-.module-detail-section:last-child {
-    border-bottom: none;
+.btn-back:hover {
+    color: var(--primary-color);
 }
 
-.module-icon-large {
-    font-size: 4rem;
+.module-content-section {
+    padding: 60px 0 100px;
+}
+
+.module-content-card {
+    background: var(--card-bg);
+    border: var(--glass-border);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.module-header {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+    padding: 3rem;
+    text-align: center;
+    border-bottom: var(--glass-border);
+}
+
+.module-icon-wrapper {
+    width: 100px;
+    height: 100px;
     background: var(--gradient-main);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.module-body {
+    padding: 3rem;
+}
+
+.module-body h3 {
+    color: var(--text-color);
     margin-bottom: 1.5rem;
-    display: inline-block; /* Fix for background-clip on some browsers */
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.module-body h4 {
+    color: var(--text-color);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+}
+
+.module-description {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.module-benefits {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    padding: 1.5rem;
+    background: rgba(14, 165, 233, 0.05);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 12px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(30, 41, 59, 0.8);
+    transform: translateX(5px);
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
 }
 
 /* Ensure links in cards don't break styles */
